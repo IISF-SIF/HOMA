@@ -1,0 +1,151 @@
+{
+  "max_concurrency": 4,
+  "num_of_data_points": 200,
+  "device_functions_dict": {
+    "fan": [
+      { "mode": "power", "args": ["state"] },
+      {
+        "mode": "speed",
+        "args": ["action", "level"]
+      },
+      { "mode": "auto", "args": [] }
+    ],
+    "tv": [
+      { "mode": "power", "args": ["status"] },
+      {
+        "mode": "volume",
+        "args": ["direction", "level"]
+      },
+      { "mode": "channel", "args": ["direction", "number"] },
+      {
+        "mode": "inputSource",
+        "args": ["source"]
+      },
+      { "mode": "openApp", "args": ["appName"] },
+      {
+        "mode": "settings",
+        "args": ["menu"]
+      },
+      {
+        "mode": "navigate",
+        "args": ["direction"]
+      },
+      { "mode": "record", "args": ["duration"] },
+      {
+        "mode": "playback",
+        "args": ["action"]
+      },
+      { "mode": "search", "args": ["input"] },
+      { "mode": "guide", "args": [] },
+      { "mode": "info", "args": [] },
+      { "mode": "menu", "args": [] },
+      { "mode": "exit", "args": [] }
+    ],
+    "ac": [
+      { "mode": "Auto", "args": [] },
+      { "mode": "Cool", "args": [] },
+      { "mode": "Dry", "args": [] },
+      { "mode": "Fan", "args": [] },
+      { "mode": "Heat", "args": [] },
+      { "mode": "WindFree", "args": [] },
+      { "mode": "Sleep", "args": [] },
+      { "mode": "Turbo", "args": [] },
+      { "mode": "Quiet", "args": [] },
+      { "mode": "Eco", "args": [] },
+      { "mode": "Dehumidify", "args": [] },
+      { "mode": "AirPurify", "args": [] },
+      { "mode": "SelfClean", "args": [] },
+      { "mode": "EnergySaving", "args": [] },
+      { "mode": "FastCool", "args": [] },
+      { "mode": "FastHeat", "args": [] },
+      { "mode": "HumidityControl", "args": [] },
+      { "mode": "Ionizer", "args": [] },
+      { "mode": "PlasmaPurify", "args": [] },
+      { "mode": "FilterClean", "args": [] },
+      { "mode": "Timer", "args": ["duration"] },
+      { "mode": "Swing", "args": ["status"] },
+      { "mode": "FanSpeed", "args": ["speed"] },
+      { "mode": "TemperatureControl", "args": ["temperature"] },
+      { "mode": "ChildLock", "args": ["status"] },
+      { "mode": "DisplayLight", "args": ["status"] },
+      { "mode": "BeepSound", "args": ["status"] },
+      { "mode": "PowerOn", "args": [] },
+      { "mode": "PowerOff", "args": [] }
+    ],
+    "fridge": [
+      { "mode": "AIRefrigeration", "args": [] },
+      { "mode": "PowerCool", "args": [] },
+      { "mode": "PowerFreeze", "args": [] },
+      { "mode": "VacationMode", "args": [] },
+      { "mode": "SelfClean", "args": [] },
+      { "mode": "SmartGrid", "args": [] },
+      { "mode": "WaterFilterReset", "args": [] },
+      { "mode": "SetFridgeTemp", "args": ["temperature"] },
+      { "mode": "SetFreezerTemp", "args": ["temperature"] },
+      { "mode": "ConvertFreezerToFridge", "args": ["duration"] },
+      { "mode": "EnergySavingMode", "args": ["duration"] },
+      { "mode": "IceMaker", "args": ["status"] },
+      { "mode": "DoorAlarm", "args": ["status"] },
+      { "mode": "Deodorize", "args": ["duration"] },
+      { "mode": "ChildLock", "args": ["status"] },
+      { "mode": "DisplayBrightness", "args": ["level"] }
+    ],
+    "washer": [
+      { "mode": "AIOptiWash", "args": [] },
+      { "mode": "PowerRinse", "args": [] },
+      { "mode": "SelfClean", "args": [] },
+      { "mode": "SpinOnly", "args": [] },
+      { "mode": "RinseSpin", "args": [] },
+      { "mode": "SteamNormal", "args": [] },
+      { "mode": "Normal", "args": ["load_type", "soil_level"] },
+      { "mode": "HeavyDuty", "args": ["soil_level"] },
+      { "mode": "SuperSpeed", "args": ["load_size"] },
+      { "mode": "SmallLoad", "args": ["load_size"] },
+      { "mode": "Delicates", "args": ["fabric_type"] },
+      { "mode": "SteamWhites", "args": ["bleach_option"] },
+      { "mode": "SteamSanitize", "args": ["colorfast", "soil_level"] },
+      { "mode": "Towels", "args": [] },
+      { "mode": "Bedding", "args": ["item_type", "load_size"] },
+      { "mode": "Activewear", "args": [] },
+      { "mode": "Denim", "args": ["color_shade"] },
+      { "mode": "Wool", "args": ["load_size"] },
+      { "mode": "Colors", "args": [] },
+      { "mode": "PermPress", "args": ["fabric_type", "soil_level"] },
+      { "mode": "EcoCold", "args": ["soil_level"] },
+      { "mode": "PowerSteam", "args": ["soil_level"] }
+    ],
+    "dryer": [
+      { "mode": "AiOptimalDry", "args": [] },
+      { "mode": "Denim", "args": [] },
+      { "mode": "EcoNormal", "args": [] },
+      { "mode": "RackDry", "args": [] },
+      { "mode": "Normal", "args": ["fabric_type"] },
+      { "mode": "TimeDry", "args": ["duration"] },
+      { "mode": "HeavyDuty", "args": ["fabric_type"] },
+      { "mode": "SuperSpeed", "args": ["fabric_type"] },
+      { "mode": "SmallLoad", "args": [] },
+      { "mode": "Delicates", "args": [] },
+      { "mode": "Sanitize", "args": [] },
+      { "mode": "SteamSanitize", "args": ["load_status"] },
+      { "mode": "WrinkleAway", "args": ["item_count", "duration"] },
+      { "mode": "SteamRefresh", "args": ["item_count", "load_status"] },
+      { "mode": "Towels", "args": [] },
+      { "mode": "Bedding", "args": [] },
+      { "mode": "Activewear", "args": [] },
+      { "mode": "Shirts", "args": [] },
+      { "mode": "Wool", "args": ["fabric_type", "machine_washable"] },
+      { "mode": "PermPress", "args": ["fabric_type"] },
+      { "mode": "AirFluff", "args": [] }
+    ],
+    "microwave": [
+      { "mode": "AutoCook", "args": [] },
+      { "mode": "QuickDefrost", "args": ["time"] },
+      { "mode": "Soften", "args": ["time"] },
+      { "mode": "Favorite", "args": [] },
+      { "mode": "Microwave", "args": ["temp", "time"] },
+      { "mode": "Deodorize", "args": [] },
+      { "mode": "Convection", "args": ["watts", "time"] },
+      { "mode": "ConvectionPlus", "args": ["watts", "time"] }
+    ]
+  }
+}

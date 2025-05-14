@@ -1,0 +1,5 @@
+/utils/.env
+__pycache__
+utils/__pycache__
+/venv
+unsloth_compiled_cache
